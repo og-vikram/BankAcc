@@ -4,8 +4,8 @@ public class BankAccount {
 	public static int numAcc = 0;
 	
 	private String name = "Vikram";
-	private double balance = 20.0;
-	private int pinNum = 7355608;
+	private double balance = 0.0;
+	private int pinNum = 0;
 	private boolean isLocked = false;
 	
 	public BankAccount(){
@@ -49,5 +49,13 @@ public class BankAccount {
 	}
 	
 	
-	
+	public void setPin(int pinNum){
+		this.pinNum = pinNum;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	public String getName(){
+		return this.name;
+	}
 }
