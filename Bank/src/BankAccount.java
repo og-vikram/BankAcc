@@ -3,7 +3,7 @@ public class BankAccount {
 
 	public static int numAcc = 0;
 	
-	private String name = "Vikram";
+	private String name = "";
 	private double balance = 0.0;
 	private int pinNum = 0;
 	private boolean isLocked = false;
@@ -11,11 +11,10 @@ public class BankAccount {
 	public BankAccount(){
 		numAcc++;
 	}
-	public BankAccount(String name, double balance, int pinNum, boolean isLocked){
-		name = this.name;
-		balance = this.balance;
-		pinNum = this.pinNum;
-		numAcc++;
+	public BankAccount(String name, double balance, int pinNum){
+		this.name = name;
+		this.balance = balance;
+		this.pinNum = pinNum;
 	}
 	public String transferAccount(String name){
 		String oldName = name;

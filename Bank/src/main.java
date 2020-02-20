@@ -46,11 +46,8 @@ public class main {
 			System.out.println("Enter your deposit amount");
 			double dep = bot.nextDouble();
 			bAccount[BankAccount.numAcc].deposit(dep);
-			BankAccount.numAcc++;
+
 		}
-		
-		
-		
 	}	
 	
 		
